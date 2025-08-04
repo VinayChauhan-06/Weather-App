@@ -11,22 +11,22 @@
         <div class="card">
             <div class="search">
                 <input type="text" placeholder="enter city name" spellcheck="false">
-                <button><img src="/project1/imges/search.png" alt=""></button>
+                <button><img src="/project1/images/search.png" alt=""></button>
             </div>
             <div class="weather">
-                <img src="/project1/imges/rain.png" alt="rain" class="weather-icon">
+                <img src="/project1/images/rain.png" alt="rain" class="weather-icon">
                 <h1 class="temp">22°C</h1>
                 <h2 class="city">Dehradun</h2>
                 <div class="details">
                     <div class="col">
-                        <img src="/project1/imges/humidity.png" alt="">
+                        <img src="/project1/images/humidity.png" alt="">
                        <div>
                          <p class="humidity">50%</p>
                         <p>Humidity</p>
                        </div>
                     </div>
                      <div class="col">
-                        <img src="/project1/imges/wind.png" alt="">
+                        <img src="/project1/images/wind.png" alt="">
                        <div>
                          <p class="wind">50Km/h</p>
                         <p>Wind-Speed</p>
@@ -59,24 +59,24 @@ async function checkWeather(city) {
 
     if(data.weather[0].main == "Clouds")
 {
-    weatherIcon.src="/project1/imges/cloud.png";
+    weatherIcon.src="/project1/images/cloud.png";
     
 }
 else if(data.weather[0].main=="Clear")
 {
-    weatherIcon.src="/project1/imges/clear.png";
+    weatherIcon.src="/project1/images/clear.png";
 }
   else if(data.weather[0].main=="Rain")
 {
-    weatherIcon.src="/project1/imges/rai.png";
+    weatherIcon.src="/project1/images/rai.png";
 }
 else if(data.weather[0].main=="Drizzle")
 {
-    weatherIcon.src="/project1/imges/drizzle.png";
+    weatherIcon.src="/project1/images/drizzle.png";
 }
 else if(data.weather[0].main=="Mist")
 {
-    weatherIcon.src="/project1/imges/mist.png";
+    weatherIcon.src="/project1/images/mist.png";
 } 
 }
 searchBtn.addEventListener('click',()=>
